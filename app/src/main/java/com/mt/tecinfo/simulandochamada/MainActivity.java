@@ -39,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, ActivityChamada.class);
                         startActivity(intent);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "E-mail ou senha inválidos!", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "E-mail e senha inválidos!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Cadastro inválido!", Toast.LENGTH_LONG).show();
                 }
             }
         });
